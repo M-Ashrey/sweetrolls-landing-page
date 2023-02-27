@@ -121,6 +121,7 @@ h1{
     justify-content: center;
     align-items: center;
     min-height: 90vh;
+    box-shadow: 0 -2px 10px #3f3f3f;
 }
 #features h2{
     font-family: lemon;
