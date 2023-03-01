@@ -163,6 +163,139 @@ h1{
     font-size: 6rem;
 }
 
+#flavors{
+    box-sizing: border-box;
+    background-color: #C3E0E5;
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0;
+    padding-bottom: 220px;
+}
+
+#flavors h3{
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: -15px;
+    text-align: center;
+    font-family: "carter one";
+    color: #ebebeb;
+}
+
+.variant-list{
+    aspect-ratio: 4/5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+    height: 50%;
+    min-height: 450px;
+    max-height: 550px;
+    min-width: 280px;
+    width: 80vw;
+    max-width: 500px;
+    padding: 30px 15px;
+    margin: 8px;
+    background-color: #003060df;
+    border-radius: 30px;
+    box-shadow: 1px 3px 15px #3f3f3f;
+}
+.variant-item{
+    padding: 14px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #003060af;
+    color: #ebebeb;
+    min-height: 23%;
+    border-radius: 25px;
+    border: 1px solid #003060ff;
+    flex: 1;
+}
+li h4{
+    margin: 0;
+    font-size: 2.6rem;
+    font-family: lemon;
+}
+li span{
+    font-size: 5rem;
+    text-decoration: none;
+    width: 90px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+#purshase{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    background-color: #1f1f1f;
+}
+#purshase form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -140px;
+    background-color: #0C2D48;
+    width: 90vw;
+    max-width: 600px;
+    min-width: 320px;
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size: 2rem;
+    color: #ebebeb;
+}
+#purshase h3{
+    display: block;
+    margin: 0px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: "carter one";
+    text-decoration: underline;
+    color: #fafcfe;
+}
+#purshase input{
+    display: block;
+    height: 2.3em;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #C3E0E5;
+    font-family: "carter one";
+    border: none;
+}
+#purshase label{
+    font-family: "carter one";
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+#purshase #submit{
+    margin: 20px;
+    height: 2em;
+    font-size: 2.2rem;
+    width: 200px;
+    border-radius: 10px;
+}
+#purshase #submit:hover{
+    padding: 0;
+    background-color: #0C2D48;
+    color: #fafcfe;
+    border: 3px solid #fafcfe;
+    border-radius: 50px;
+    transition-duration: 500ms;
+}
+
 @media(max-width:750px){
     #logo{
         flex-direction: column;
@@ -181,13 +314,10 @@ h1{
     #nav-bar{
         width: 75%;
         min-width: 150px;
-        font-size: 1.1rem;
-    }
-    html{
-        font-size: 12px;
+        font-size: 1rem;
     }
     h1{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .nav-link{
         height: 100%;
@@ -202,15 +332,25 @@ h1{
     #hero-text h2{
         margin: 0;
         padding: 7px;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     #hero-text div{
         margin: 5px 0;
         padding-left: 3px;
     }
     #hero-text p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin: 5px 0;
+    }
+    li h4{
+        font-size: 1.8rem;
+    }
+    .feature-item{
+        font-size: 1.4rem;
+    }
+    .variant-item{
+        min-height: unset;
+        padding: 12px;
     }
 }
 
